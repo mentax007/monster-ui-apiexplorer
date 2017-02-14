@@ -173,7 +173,6 @@ define(function(require){
 							$(item_data).find(".userId").val(monster.apps.auth.userId);
 						}
 						if ($.inArray("token", arr_params) !== -1) {
-						//	$(item_data).find(".token").val(monster.apps.auth.authToken);
 						        $(item_data).find(".token").val(monster.util.getAuthToken());
 						}
 						if ($.inArray("domain", arr_params) !== -1) {
@@ -516,7 +515,6 @@ define(function(require){
 				headers: {
 					"Accept": content_type,
 					"Content-Type": content_type,
-				//	"X-Auth-Token": monster.apps.auth.authToken
 				        "X-Auth-Token": monster.util.getAuthToken()
 				},
 				success: function(data) {
