@@ -9,7 +9,7 @@ define(function(require){
 		animation = true;
 	
         var Handlebars = require('./lib/handlebars');
-        var Clipboard = require('./lib/clipboard.min');
+        var clipboard = require('./lib/clipboard.min');
 
 	var app = {
 		name: 'apiexplorer',
